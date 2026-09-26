@@ -148,6 +148,13 @@ nav a:hover, nav a.active{color:var(--mint);}
   .gateway-grid{grid-template-columns:1fr;}
 }
 
+/* price + buy */
+.price-row{display:flex; align-items:center; gap:16px; margin-top:22px; flex-wrap:wrap;}
+.price{font-family:var(--font-serif); font-size:1.4rem; color:var(--text); font-weight:600;}
+.price .was{font-family:var(--font-mono); font-size:.85rem; color:var(--muted); text-decoration:line-through; margin-right:8px; font-weight:400;}
+.btn-buy{display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:2px; font-size:.9rem; font-weight:600; text-decoration:none; background:#FF9900; color:#0a1716;}
+.btn-buy:hover{background:#ffab2e;}
+
 footer{border-top:1px solid var(--line); padding:48px 0;}
 .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
 footer p{color:var(--muted); font-size:.85rem;}
