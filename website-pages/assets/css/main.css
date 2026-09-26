@@ -117,6 +117,37 @@ nav a:hover, nav a.active{color:var(--mint);}
 .paper .doi-link:hover{border-color:var(--gold);}
 .paper .cited-by{font-family:var(--font-mono); font-size:.78rem; color:var(--muted);}
 
+/* hashtag / brand tag */
+.hashtag{font-family:var(--font-mono); font-size:.82rem; color:var(--mint); letter-spacing:.02em;}
+
+/* home gateway cards */
+.gateway-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.gate-card{position:relative; display:block; border:1px solid var(--line); background:var(--panel); padding:36px 28px; text-decoration:none; overflow:hidden; transition:border-color .15s ease, transform .15s ease;}
+.gate-card:hover{border-color:var(--accent,var(--mint)); transform:translateY(-4px);}
+.gate-card .gc-no{font-family:var(--font-mono); font-size:.78rem; color:var(--accent,var(--gold));}
+.gate-card h3{font-size:1.4rem; margin-top:14px; color:var(--text);}
+.gate-card p{margin-top:10px; font-size:.92rem; color:var(--muted); max-width:34ch;}
+.gate-card .gc-arrow{margin-top:22px; font-family:var(--font-mono); font-size:.85rem; color:var(--accent,var(--mint));}
+
+/* profile / CV page */
+.cv-section{margin-top:40px;}
+.cv-section h4{font-size:.8rem; letter-spacing:.05em; color:var(--gold); font-weight:500; font-family:var(--font-mono); text-transform:uppercase; margin-bottom:16px;}
+.cv-entry{padding:14px 0; border-top:1px solid var(--line);}
+.cv-entry:first-of-type{border-top:none;}
+.cv-entry .role{font-weight:600; color:var(--text); font-size:.98rem;}
+.cv-entry .org{color:var(--mint); font-size:.88rem; margin-top:2px;}
+.cv-entry .period{font-family:var(--font-mono); font-size:.78rem; color:var(--muted); margin-top:2px;}
+.cv-entry ul{margin-top:8px; padding-left:18px; font-size:.88rem; color:var(--text); opacity:.9;}
+.cv-entry ul li{margin-top:4px;}
+.chip-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+.chip-row span{font-size:.78rem; color:var(--muted); border:1px solid var(--line); padding:3px 10px; border-radius:20px;}
+.contact-row{display:flex; flex-wrap:wrap; gap:22px; margin-top:16px; font-size:.88rem; color:var(--muted); font-family:var(--font-mono);}
+.contact-row a{color:var(--mint); text-decoration:none;}
+
+@media (max-width:860px){
+  .gateway-grid{grid-template-columns:1fr;}
+}
+
 footer{border-top:1px solid var(--line); padding:48px 0;}
 .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
 footer p{color:var(--muted); font-size:.85rem;}

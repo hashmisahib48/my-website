@@ -1,12 +1,19 @@
-# Mudassar Hussain Hashmi — Author Site
+# Python for Engineers and Scientists (#python4tech)
 
-A static publicity site for four publisher-style Python field references, plus the author's academic research profile.
+A static publicity site for four publisher-style Python field references, plus the author's academic research profile — restructured as a home page that gates into three sections: **Books**, **Publications**, and **Personal Profile**.
+
+```
+Home
+ |----- Books
+ |----- Publications
+ |----- Personal Profile
+```
 
 **Live pages**
-- `index.html` — home: hero, key stats, book previews
+- `index.html` — home: brand, hero, key stats, and the three gateway cards (Books / Publications / Personal Profile)
 - `books.html` — full details for all four books
-- `research.html` — author bio and Google Scholar summary
 - `publications.html` — full publication list with readable abstracts and DOI links, ScienceDirect-style
+- `profile.html` — personal profile: bio, education, research & industry experience, honors, grants, skills, certifications, and Google Scholar summary
 
 ## Structure
 
@@ -14,8 +21,8 @@ A static publicity site for four publisher-style Python field references, plus t
 .
 ├── index.html
 ├── books.html
-├── research.html
 ├── publications.html
+├── profile.html
 ├── assets/
 │   ├── css/
 │   │   └── main.css
@@ -48,9 +55,10 @@ Then visit `http://localhost:8000`.
 
 ## Editing content
 
-- Text and stats live directly in the HTML files — edit `index.html`, `books.html`, or `research.html` and refresh.
+- Text and stats live directly in the HTML files — edit `index.html`, `books.html`, `publications.html`, or `profile.html` and refresh.
 - Shared styling (colors, type, layout) lives in `assets/css/main.css`.
 - Book cover images are in `assets/img/`; replace them with the same filenames to update covers without touching the HTML.
+- The site brand ("Python for Engineers & Scientists" / `#python4tech`) appears in the header and footer of every page — update it in each file if it changes.
 
 ## License
 
