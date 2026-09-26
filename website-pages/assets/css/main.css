@@ -98,6 +98,25 @@ nav a:hover, nav a.active{color:var(--mint);}
 .pub:first-of-type{border-top:none;}
 .pub .m{color:var(--muted); font-size:.8rem; margin-top:4px; font-family:var(--font-mono);}
 
+/* publications page (ScienceDirect-style article preview) */
+.paper{padding:36px 0; border-top:1px solid var(--line);}
+.paper:first-of-type{border-top:none;}
+.paper .year-badge{display:inline-block; font-family:var(--font-mono); font-size:.72rem; color:var(--ink); background:var(--mint); padding:3px 9px; border-radius:2px; margin-bottom:14px;}
+.paper h3{font-size:1.25rem; line-height:1.3; max-width:52ch;}
+.paper h3 a{color:var(--text); text-decoration:none; border-bottom:1px solid var(--line);}
+.paper h3 a:hover{color:var(--mint); border-color:var(--mint);}
+.paper .authors{margin-top:8px; font-size:.9rem; color:var(--muted);}
+.paper .authors b{color:var(--text); font-weight:500;}
+.paper .cite{margin-top:4px; font-size:.86rem; color:var(--muted); font-style:italic;}
+.paper .abstract-label{margin-top:18px; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-family:var(--font-mono);}
+.paper .abstract{margin-top:8px; font-size:.94rem; max-width:70ch; opacity:.92;}
+.paper .keywords{margin-top:14px; display:flex; flex-wrap:wrap; gap:8px;}
+.paper .keywords span{font-size:.75rem; color:var(--muted); border:1px solid var(--line); padding:3px 10px; border-radius:20px;}
+.paper .paper-foot{margin-top:18px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+.paper .doi-link{font-family:var(--font-mono); font-size:.82rem; color:var(--gold); text-decoration:none; border-bottom:1px solid transparent;}
+.paper .doi-link:hover{border-color:var(--gold);}
+.paper .cited-by{font-family:var(--font-mono); font-size:.78rem; color:var(--muted);}
+
 footer{border-top:1px solid var(--line); padding:48px 0;}
 .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;}
 footer p{color:var(--muted); font-size:.85rem;}

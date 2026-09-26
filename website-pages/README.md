@@ -5,7 +5,8 @@ A static publicity site for four publisher-style Python field references, plus t
 **Live pages**
 - `index.html` — home: hero, key stats, book previews
 - `books.html` — full details for all four books
-- `research.html` — author bio and Google Scholar record
+- `research.html` — author bio and Google Scholar summary
+- `publications.html` — full publication list with readable abstracts and DOI links, ScienceDirect-style
 
 ## Structure
 
@@ -14,6 +15,7 @@ A static publicity site for four publisher-style Python field references, plus t
 ├── index.html
 ├── books.html
 ├── research.html
+├── publications.html
 ├── assets/
 │   ├── css/
 │   │   └── main.css
